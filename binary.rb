@@ -28,10 +28,33 @@ class BinaryTree
 				add(value, new_node)
 			end
 		end
+
 	end
+
+	def breadth_first_search(value)
+	end
+
+	def depth_first_search(root, search_value)
+		if @root != nil
+			if r@oot.value != search_value
+				depth_first_search(@root.left)
+				depth_first_search(@root.right)
+			elsif 
+				"yes, here"
+			end
+				
+		elsif @root == nil
+			return "empty"
+		end
+
+		#visit left subtree
+		#visit right subtree
+	end
+
 
 end
 
 arr =[1,6,5,9,4,3]
 tree = BinaryTree.new(arr)
 puts tree.build_tree
+puts tree.depth_first_search(arr[0], 9)
